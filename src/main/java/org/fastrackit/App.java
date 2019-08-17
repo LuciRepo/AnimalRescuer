@@ -71,5 +71,30 @@ public class App {
         System.out.println(animalFun.adopter);
         System.out.println(animalFun.dog);
         System.out.println(animalFun.vet);
+
+   Shelter tempShelter=new Shelter();
+        tempShelter.name="Grivei";
+        tempShelter.address= "Oradeaville outskirts";
+        tempShelter.sizeSm=10000;
+        System.out.println(dog.name+" was adoptet from animal shelter "+ tempShelter.name+" located in "+tempShelter.address);
+
+   Drugs animalDrugs = new Drugs();
+        animalDrugs.name="Vitamins and food supliments";
+        animalDrugs.brand="Vitanimalys";
+        animalDrugs.pricePerDose= 20;
+        System.out.println(dogOwner.name+" buys "+animalDrugs.brand+" for "+dog.name);
+
+   Store animalStore = new Store();
+        animalStore.name= "Pet Store";
+        animalStore.adress= " Oradeaville south part";
+        animalStore.manager= "Peter";
+        System.out.println(animalDrugs.brand+" costs "+animalDrugs.pricePerDose+" $ at "+animalStore.manager+"'s "+animalStore.name);
+
+   Transport animalTransport = new Transport ();
+        animalTransport.type="Road";
+        animalTransport.name = "Taxi";
+        animalTransport.speedKmPerHour= 45.5;
+        animalTransport.pricePerKm=1.2;
+        System.out.println(theVet.name+" uses "+animalTransport.name+" to visit "+dog.name);
     }
    }
