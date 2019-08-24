@@ -7,6 +7,8 @@ public class LeisureActivities {
     private String place;
     private double caloriesBurnt;
     private int satisfactionLeisure;
+    private String adopterName;
+    private String animalName;
 
     public String getName() {
         return name;
@@ -61,5 +63,9 @@ public class LeisureActivities {
         this.caloriesBurnt=caloriesBurnt;
         this.satisfactionLeisure=satisfactionLeisure;
     }
-
+    public void playTimeAnimal (String adopterName,String animalName){
+        this.adopterName=adopterName;
+        this.animalName=animalName;
+        System.out.println(adopterName+" is having fun with "+animalName+" for "+this.durationMinutes+" minutes of "+this.name);
+    }
 }

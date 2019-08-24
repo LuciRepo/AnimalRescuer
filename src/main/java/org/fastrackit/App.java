@@ -78,7 +78,7 @@ public class App {
         theHappyTime.setCaloriesBurnt();
         theHappyTime.setSatisfactionLeisure();
         //theHappyTime.name = "A walk in the park";
-        theHappyTime.setName("More than a walk in the park");
+        theHappyTime.setName("walk in the park");
         //theHappyTime.durationMinutes = 35;
         //theHappyTime.nunmerActivitiesPerDay = 2;
         //theHappyTime.place = "Central Park";
@@ -156,5 +156,7 @@ public class App {
         animalTransport.setSpeedKmPerHour(34.5);
         //animalTransport.pricePerKm = 1.2;
         System.out.println(theVet.getName()/*name*/ + " uses " + animalTransport.getName()/*name*/ + " to visit " + dog.getName()/*name*/);
+        dogOwner.feedAnimal("Chaika","Purina");
+        theHappyTime.playTimeAnimal("Toby","Spyke");
     }
 }

@@ -9,6 +9,8 @@ public class Adopter {
     private String occupation;
     private String address;
     private double incomePerAnum;
+    private String dogName;
+    private String foodName;
 
     public String getName() {
         return name;
@@ -66,13 +68,19 @@ public class Adopter {
         this.incomePerAnum = incomePerAnum;
     }
 
-    public Adopter (String name, String occupation, double incomePerAnum){
-        this.name=name;
-        this.occupation=occupation;
-        if (incomePerAnum>360){
-            this.incomePerAnum=incomePerAnum;
-        }
-        else
+    public Adopter(String name, String occupation, double incomePerAnum) {
+        this.name = name;
+        this.occupation = occupation;
+        if (incomePerAnum > 360) {
+            this.incomePerAnum = incomePerAnum;
+        } else
             System.out.println("We are very sorry but you are uneligible to adopt a dog");
+        }
+
+    public void feedAnimal(String dogName,String foodName) {
+        this.dogName = dogName;
+        this.foodName=foodName;
+        System.out.println(this.name +" just gave some "+foodName+" to "+dogName);
     }
-}
+    }
+
