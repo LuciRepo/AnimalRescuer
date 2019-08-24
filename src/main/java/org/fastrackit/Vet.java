@@ -2,10 +2,26 @@ package org.fastrackit;
 
 public class Vet extends Adopter {
     // String name;
-    String specialization;
+    private String specialization;
     //String sex;
     // int age;
-    double feePerHour;
+    private double feePerHour;
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization() {
+        this.specialization = specialization;
+    }
+
+    public double getFeePerHour() {
+        return feePerHour;
+    }
+
+    public void setFeePerHour() {
+        this.feePerHour = feePerHour;
+    }
 
     //String address;
     // double incomePerAnum;
