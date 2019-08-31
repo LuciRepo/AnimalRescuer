@@ -5,7 +5,7 @@ import java.util.Date;
 //aici se construieste
 public class App {
     public static void main(String[] arg) {
-        Animal dog = new Animal(13,0,34);
+        Animal dog = new Animal(13,0,3);
         dog.setHealthLevel ();
         dog.setHungerLevel();
         dog.setMoodLevel();
@@ -26,7 +26,7 @@ public class App {
         dog.setRace("Bulldog");
         //dog.colour = "Grey-brownish";
         dog.setColour("Grey");
-
+        dog.showAnimalMoodStatus();
 
         System.out.println("Dog health level is " + dog.getHealthLevel()/*healthLevel*/ + ", hunger level is " + dog.getHungerLevel()/*hungerLevel*/ + ", mood level is " + dog.getMoodLevel()/*moodLevel*/);
         Adopter dogOwner = new Adopter("Toby", "Soft Dev", 230);
@@ -122,7 +122,7 @@ public class App {
         // tempShelter.sizeSm = 10000;
         System.out.println(dog.getName()/*name*/ + " was adoptet from animal shelter " + tempShelter.getName()/*name*/ + " located in " + tempShelter.getAddress()/*address*/);
 
-        Drugs animalDrugs = new Drugs(2020, 132, 7, "Some but harmless");
+        Drugs animalDrugs = new Drugs(2020, 132, 7, "Grave");
         animalDrugs.setQuantity();
         animalDrugs.setPricePerKg();
         animalDrugs.setCaloriesPerKg();
@@ -158,5 +158,23 @@ public class App {
         System.out.println(theVet.getName()/*name*/ + " uses " + animalTransport.getName()/*name*/ + " to visit " + dog.getName()/*name*/);
         dogOwner.feedAnimal("Chaika","Purina");
         theHappyTime.playTimeAnimal("Toby","Spyke");
+
+        Bird bird=new Bird(3,4,6,200);
+        bird.setName("Tweety");
+        bird.setAge(2);
+        bird.setFoodPreference("sunflower seeds");
+        bird.setRecreationPreference("singing");
+        bird.setSpecie("Parrot");
+        bird.setColour("redish");
+        bird.showAnimalMoodStatus();
+
+        Insect butterfly=new Insect(4,4,5,30,false);
+        butterfly.setName("Floppy");
+        butterfly.setFoodPreference("Dust");
+        butterfly.setSpecie("Blue butterfly");
+        butterfly.setColour("blueish");
+        butterfly.setRecreationPreference("Flying in circles");
+        butterfly.showAnimalMoodStatus();
     }
+
 }

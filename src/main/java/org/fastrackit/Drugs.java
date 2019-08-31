@@ -28,8 +28,9 @@ public class Drugs extends Foodforanimals {
         super(quantity, pricePerKg, caloriesPerKg);
         this.sideEffects = sideEffects;
         if (sideEffects=="null"){
+            System.out.println("Efecte secundare: "+"Nu e cazul");
             }
         else
-            System.out.println(sideEffects);
+            System.out.println("Efecte secundare "+ sideEffects);
     }
 }
