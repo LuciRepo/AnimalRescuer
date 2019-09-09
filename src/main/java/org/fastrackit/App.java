@@ -5,8 +5,8 @@ import java.util.Date;
 //aici se construieste
 public class App {
     public static void main(String[] arg) {
-        Animal dog = new Animal(13,0,3);
-        dog.setHealthLevel ();
+        Animal dog = new Animal(13, 0, 3);
+        dog.setHealthLevel();
         dog.setHungerLevel();
         dog.setMoodLevel();
         //dog.name="Spyke";
@@ -55,9 +55,9 @@ public class App {
         //animalFood.pricePerKg=1.4;
         //animalFood.quantity=2;
         //animalFood.expirationDate = new Date(2020, 12, 30, 0, 0, 0);
-        animalFood.setExpirationDate(2020,12,30,0,0,0);
+        animalFood.setExpirationDate(2020, 12, 30, 0, 0, 0);
         //animalFood.manufacturingDate = new Date(2019, 12, 15, 0, 0, 0);
-        animalFood.setManufacturingDate(2019,12,15,0,0,0);
+        animalFood.setManufacturingDate(2019, 12, 15, 0, 0, 0);
         //animalFood.quantiyAvailable = 200;
         //animalFood.setQuantity(230);
         //animalFood.brand = "Meat&Eat";
@@ -71,7 +71,7 @@ public class App {
         //animalFood.caloriesPerKg=500;
         System.out.println("Expiration date is " + animalFood.getExpirationDate()/*expirationDate*/);
         System.out.println("Manufacturing date is " + animalFood.getManufacturingDate()/*manufacturingDate*/);
-        System.out.println("Data de azi este: "+animalFood.currentDateTime);
+        System.out.println("Data de azi este: " + animalFood.currentDateTime);
        /* if(animalFood.currentDateTime.isAfter(animalFood.getExpirationDate()){
             System.out.println(animalFood.getName()+ " este expirata");
         }*/
@@ -107,7 +107,7 @@ public class App {
         // theVet.feePerHour=14;
         //theVet.address = "City outskirts";
         theVet.setAddress("City nearby");
-       // theVet.incomePerAnum = 8000;
+        // theVet.incomePerAnum = 8000;
         //theVet.setIncomePerAnum(8890);
         System.out.println("Vet's name is " + theVet.getName()/*name*/);
 
@@ -152,7 +152,7 @@ public class App {
         System.out.println(animalDrugs.getBrand()/*brand*/ + " costs " + animalDrugs.getPricePerDose()/*pricePerDose*/ + " $ at " + animalStore.getManager()/*manager*/ + "'s " + animalStore.getName()/*name*/);
 
         Transport animalTransport;
-        animalTransport = new Transport("Taxi2",1.6);
+        animalTransport = new Transport("Taxi2", 1.6);
         animalTransport.setName();
         animalTransport.setPricePerKm();
         // animalTransport.type = "Road";
@@ -162,10 +162,10 @@ public class App {
         animalTransport.setSpeedKmPerHour(34.5);
         //animalTransport.pricePerKm = 1.2;
         System.out.println(theVet.getName()/*name*/ + " uses " + animalTransport.getName()/*name*/ + " to visit " + dog.getName()/*name*/);
-        dogOwner.feedAnimal("Chaika","Meat",5,6);
-        theHappyTime.playTimeAnimal("Toby","Spyke",6,"Chasing cats");
+        dogOwner.feedAnimal("Chaika", "Meat", 5, 6);
+        theHappyTime.playTimeAnimal("Toby", "Spyke", 6, "Chasing cats");
 
-        Bird bird=new Bird(3,4,6,200);
+        Bird bird = new Bird(3, 4, 6, 200);
         bird.setName("Tweety");
         bird.setAge(2);
         bird.setFoodPreference("sunflower seeds");
@@ -174,13 +174,16 @@ public class App {
         bird.setColour("redish");
         bird.showAnimalMoodStatus();
 
-        Insect butterfly=new Insect(4,4,5,30,false);
+        Insect butterfly = new Insect(4, 4, 5, 30, false);
         butterfly.setName("Floppy");
         butterfly.setFoodPreference("Dust");
         butterfly.setSpecie("Blue butterfly");
         butterfly.setColour("blueish");
         butterfly.setRecreationPreference("Flying in circles");
         butterfly.showAnimalMoodStatus();
+
+        LogicalOp logicalOp = new LogicalOp();
+        //logicalOp.asterix(7);
     }
 
 }
