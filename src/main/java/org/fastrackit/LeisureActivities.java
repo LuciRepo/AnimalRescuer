@@ -63,9 +63,16 @@ public class LeisureActivities {
         this.caloriesBurnt=caloriesBurnt;
         this.satisfactionLeisure=satisfactionLeisure;
     }
-    public void playTimeAnimal (String adopterName,String animalName){
+    public void playTimeAnimal (String adopterName,String animalName, int moodLevel, String recreationPreference){
         this.adopterName=adopterName;
         this.animalName=animalName;
-        System.out.println(adopterName+" is having fun with "+animalName+" for "+this.durationMinutes+" minutes of "+this.name);
+        //moodLevel++;
+        //moodLevel=Math.min(moodLevel,10);
+        if(recreationPreference=="Chasing cats"){
+            moodLevel=moodLevel+2;
+        }else{
+            moodLevel++;
+        }
+        System.out.println(adopterName+" is having fun with "+animalName+" for "+this.durationMinutes+" minutes of "+this.name+" and the mood level is "+moodLevel);
     }
 }

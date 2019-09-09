@@ -19,7 +19,7 @@ public class App {
         //dog.foodPreference = "Meat";
         dog.setFoodPreference("Meat");
         //dog.recreationPreference = "Chasing cats";
-        dog.setRecreationPreference("Chasing cats and other dogs");
+        dog.setRecreationPreference("Chasing cats");
         //dog.specie = "Dog";
         dog.setSpecie("Dog");
         //dog.race = "Bulldog";
@@ -71,7 +71,13 @@ public class App {
         //animalFood.caloriesPerKg=500;
         System.out.println("Expiration date is " + animalFood.getExpirationDate()/*expirationDate*/);
         System.out.println("Manufacturing date is " + animalFood.getManufacturingDate()/*manufacturingDate*/);
-
+        System.out.println("Data de azi este: "+animalFood.currentDateTime);
+       /* if(animalFood.currentDateTime.isAfter(animalFood.getExpirationDate()){
+            System.out.println(animalFood.getName()+ " este expirata");
+        }*/
+      /* if (animalFood.currentDateTime.compareTo(animalFood.getExpirationDate())>0){
+           System.out.println(animalFood.getName()+ " este expirata");
+       }*/
         LeisureActivities theHappyTime = new LeisureActivities(45, 3, 300, 3);
         theHappyTime.setDurationMinutes();
         theHappyTime.setNumberActivitiesPerDay();
@@ -156,8 +162,8 @@ public class App {
         animalTransport.setSpeedKmPerHour(34.5);
         //animalTransport.pricePerKm = 1.2;
         System.out.println(theVet.getName()/*name*/ + " uses " + animalTransport.getName()/*name*/ + " to visit " + dog.getName()/*name*/);
-        dogOwner.feedAnimal("Chaika","Purina");
-        theHappyTime.playTimeAnimal("Toby","Spyke");
+        dogOwner.feedAnimal("Chaika","Meat",5,6);
+        theHappyTime.playTimeAnimal("Toby","Spyke",6,"Chasing cats");
 
         Bird bird=new Bird(3,4,6,200);
         bird.setName("Tweety");
