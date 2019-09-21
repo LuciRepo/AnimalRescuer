@@ -2,7 +2,7 @@ package org.fastrackit;
 
 public class Insect extends Bird {
     boolean poisonous;
-
+    //private Bird bird2=new Bird(1,3,5,500); daca vrem sa folosim compozitie in loc de mostenire
     public boolean isPoisonous() {
         return poisonous;
     }
@@ -18,7 +18,7 @@ public class Insect extends Bird {
 
     @Override
     public void showAnimalMoodStatus() {
-        super.showAnimalMoodStatus();
+        //super.showAnimalMoodStatus();
        int moodLevel = 0;
         moodLevel=getMoodLevel();
         if (moodLevel>5) {

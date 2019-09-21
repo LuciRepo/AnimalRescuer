@@ -2,7 +2,7 @@ package org.fastrackit;
 
 public class Bird extends Animal {
     private int maxFlightAltitude;
-
+    //private Animal animal2=new Animal(12,12,12); daca vrem sa facem compozitie in loc de mostenire
     public int getMaxFlightAltitude() {
         return maxFlightAltitude;
     }
@@ -13,7 +13,7 @@ public class Bird extends Animal {
 
     @Override
     public void showAnimalMoodStatus() {
-        super.showAnimalMoodStatus();
+        //super.showAnimalMoodStatus();
         int moodLevel = 0;
         moodLevel=getMoodLevel();
         if (moodLevel>5) {

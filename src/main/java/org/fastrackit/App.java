@@ -5,7 +5,7 @@ import java.util.Date;
 //aici se construieste
 public class App {
     public static void main(String[] arg) {
-        Animal dog = new Animal(13, 0, 3);
+        Animal dog = new Animal(13, 0, 7);
         dog.setHealthLevel();
         dog.setHungerLevel();
         dog.setMoodLevel();
@@ -174,7 +174,17 @@ public class App {
         bird.setColour("redish");
         bird.showAnimalMoodStatus();
 
-        Insect butterfly = new Insect(4, 4, 5, 30, false);
+        /*
+        dog.setName("Tweety");
+        dog.setAge(2);
+        dog.setFoodPreference("sunflower seeds");
+        dog.setRecreationPreference("singing");
+        dog.setSpecie("Parrot");
+        dog.setColour("redish");
+        dog.showAnimalMoodStatus();
+         */
+
+        Insect butterfly = new Insect(4, 4, 8, 30, false);
         butterfly.setName("Floppy");
         butterfly.setFoodPreference("Dust");
         butterfly.setSpecie("Blue butterfly");
@@ -182,6 +192,14 @@ public class App {
         butterfly.setRecreationPreference("Flying in circles");
         butterfly.showAnimalMoodStatus();
 
+        /*
+        dog.setName("Floppy");
+        dog.setFoodPreference("Dust");
+        dog.setSpecie("Blue butterfly");
+        dog.setColour("blueish");
+        dog.setRecreationPreference("Flying in circles");
+        bird.showAnimalMoodStatus();
+         */
         LogicalOp logicalOp = new LogicalOp();
         //logicalOp.asterix(7);
     }
