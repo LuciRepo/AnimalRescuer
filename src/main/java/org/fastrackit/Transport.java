@@ -38,8 +38,8 @@ public class Transport {
         this.pricePerKm = pricePerKm;
     }
 
-    public Transport (String name, double pricePerKm){
-        this.name=name;
-        this.pricePerKm=pricePerKm;
+    public Transport(String name, double pricePerKm) {
+        this.name = name;
+        this.pricePerKm = pricePerKm;
     }
 }

@@ -25,6 +25,7 @@ public class LeisureActivities {
     public void setDurationMinutes() {
         this.durationMinutes = durationMinutes;
     }
+
     public String getPlace() {
         return place;
     }
@@ -57,22 +58,24 @@ public class LeisureActivities {
         this.satisfactionLeisure = satisfactionLeisure;
     }
 
-    public LeisureActivities (int durationMinutes, int numberActivitiesPerDay, int caloriesBurnt, int satisfactionLeisure){
-        this.durationMinutes=durationMinutes;
-        this.numberActivitiesPerDay=numberActivitiesPerDay;
-        this.caloriesBurnt=caloriesBurnt;
-        this.satisfactionLeisure=satisfactionLeisure;
+    public LeisureActivities(String name,int durationMinutes, int numberActivitiesPerDay, int caloriesBurnt, int satisfactionLeisure) {
+        this.name=name;
+        this.durationMinutes = durationMinutes;
+        this.numberActivitiesPerDay = numberActivitiesPerDay;
+        this.caloriesBurnt = caloriesBurnt;
+        this.satisfactionLeisure = satisfactionLeisure;
     }
-    public void playTimeAnimal (String adopterName,String animalName, int moodLevel, String recreationPreference){
-        this.adopterName=adopterName;
-        this.animalName=animalName;
+
+    public void playTimeAnimal(String adopterName, String animalName, int moodLevel, String recreationPreference) {
+        this.adopterName = adopterName;
+        this.animalName = animalName;
         //moodLevel++;
         //moodLevel=Math.min(moodLevel,10);
-        if(recreationPreference=="Chasing cats"){
-            moodLevel=moodLevel+2;
-        }else{
+        if (recreationPreference == "Chasing cats") {
+            moodLevel = moodLevel + 2;
+        } else {
             moodLevel++;
         }
-        System.out.println(adopterName+" is having fun with "+animalName+" for "+this.durationMinutes+" minutes of "+this.name+" and the mood level is "+moodLevel);
+        System.out.println(adopterName + " is having fun with " + animalName + " for " + this.durationMinutes + " minutes of " + this.name + " and the mood level is " + moodLevel);
     }
 }

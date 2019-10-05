@@ -12,7 +12,7 @@ import java.util.Date;
 //public class SimpleDateFormatExample {
 
 public class Foodforanimals {
-// sintaxa de definirea a obiectului DATA
+    // sintaxa de definirea a obiectului DATA
     public Date StringToDate(String s) {
 
         Date result = null;
@@ -25,9 +25,10 @@ public class Foodforanimals {
         }
         return result;
     }
-//sintaxa de definire a datei curente
-    LocalDateTime currentDateTime=LocalDateTime.now();
-    DateTimeFormatter formatter=DateTimeFormatter.ofPattern("dd-mm-yyyy HH:mm:ss");
+
+    //sintaxa de definire a datei curente
+    LocalDateTime currentDateTime = LocalDateTime.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-mm-yyyy HH:mm:ss");
 
     private String name;
     private double pricePerKg;
@@ -131,8 +132,9 @@ public class Foodforanimals {
     }
 
     // System.out.println(expirationDate);
-    public Foodforanimals(double quantity, double pricePerKg, double caloriesPerKg) {
+    public Foodforanimals(String name, double quantity, double pricePerKg, double caloriesPerKg) {
         //this.expirationDate = expirationDate;
+        this.name=name;
         this.quantity = quantity;
         this.pricePerKg = pricePerKg;
         this.caloriesPerKg = caloriesPerKg;

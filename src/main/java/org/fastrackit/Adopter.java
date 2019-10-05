@@ -77,13 +77,13 @@ public class Adopter {
             System.out.println("We are very sorry but you are uneligible to adopt a dog");
     }
 
-    public void feedAnimal(String dogName, String foodName, int hungerLevel,int moodLevel) {
+    public void feedAnimal(String dogName, String foodName, int hungerLevel, int moodLevel) {
         this.dogName = dogName;
         this.foodName = foodName;
         //hungerLevel--;
         //hungerLevel = Math.max(hungerLevel, 1);
-        if(foodName=="Meat"){
-            System.out.println("Mood level is at "+ moodLevel++);
+        if (foodName == "Meat") {
+            System.out.println("Mood level is at " + moodLevel++);
         }
 
         System.out.println(this.name + " just gave some " + foodName + " to " + dogName + " and its level of hunger is at " + hungerLevel);

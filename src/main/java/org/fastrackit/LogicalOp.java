@@ -2,7 +2,7 @@ package org.fastrackit;
 
 public class LogicalOp {
     public static void main(String[] args) {
-       // LogicalOp logicalOp = new LogicalOp();
+        // LogicalOp logicalOp = new LogicalOp();
     }
 
     public LogicalOp() {
@@ -13,7 +13,7 @@ public class LogicalOp {
         //count1To100();
         //countOdd1To100();
         //sumTo100(99);
-       // averageTo100(29);
+        // averageTo100(29);
         asterix(7);
     }
 
@@ -111,9 +111,9 @@ public class LogicalOp {
         }
     }*/
 
-    public void asterix(int number){
-        for(int i=1;i<=7;i++){
-            for(int j=i;j<7;j++){
+    public void asterix(int number) {
+        for (int i = 1; i <= 7; i++) {
+            for (int j = i; j < 7; j++) {
                 System.out.print("*");
             }
             System.out.println("*");

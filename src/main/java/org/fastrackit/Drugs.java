@@ -24,13 +24,12 @@ public class Drugs extends Foodforanimals {
         this.sideEffects = sideEffects;
     }
 
-    public Drugs(double quantity, double pricePerKg, double caloriesPerKg, String sideEffects) {
-        super(quantity, pricePerKg, caloriesPerKg);
+    public Drugs(String name,double quantity, double pricePerKg, double caloriesPerKg, String sideEffects) {
+        super(name, quantity, pricePerKg, caloriesPerKg);
         this.sideEffects = sideEffects;
-        if (sideEffects=="null"){
-            System.out.println("Efecte secundare: "+"Nu e cazul");
-            }
-        else
-            System.out.println("Efecte secundare "+ sideEffects);
+        if (sideEffects == "null") {
+            System.out.println("Efecte secundare: " + "Nu e cazul");
+        } else
+            System.out.println("Efecte secundare " + sideEffects);
     }
 }

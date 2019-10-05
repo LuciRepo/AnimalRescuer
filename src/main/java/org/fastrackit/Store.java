@@ -13,11 +13,11 @@ public class Store extends Shelter {
         this.manager = manager;
     }
 
-    public Store(String name, String address, int sizeSm, String manager){
-        super(name,address,sizeSm);
-        if (sizeSm>1000){
+    public Store(String name, String address, int sizeSm, String manager) {
+        super(name, address, sizeSm);
+        if (sizeSm > 1000) {
             System.out.println("This is such a big store");
         }
-        this.manager=manager;
+        this.manager = manager;
     }
 }

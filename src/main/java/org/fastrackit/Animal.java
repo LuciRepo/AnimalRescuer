@@ -3,7 +3,7 @@ package org.fastrackit;
 
 //aici se proiecteaza
 public class Animal {
-   private String name;
+    private String name;
     private int age;
     private int healthLevel;
     private int hungerLevel;
@@ -103,34 +103,31 @@ public class Animal {
         this.moodLevel = moodLevel;
     }
 
-    public Animal(int healthLevel,int hungerLevel,int moodLevel) {
-        if (healthLevel >10) {
-            this.healthLevel=Math.min(10,healthLevel);
-        }
-        else
-            this.healthLevel=Math.max(1,healthLevel);
-        if (hungerLevel >10) {
-            this.hungerLevel=Math.min(10,hungerLevel);
-        }
-        else
-            this.hungerLevel=Math.max(1,hungerLevel);
-        if (moodLevel >10) {
-            this.moodLevel=Math.min(10,moodLevel);
-        }
-        else
-            this.moodLevel=Math.max(1,moodLevel);
+    public Animal(int healthLevel, int hungerLevel, int moodLevel) {
+        if (healthLevel > 10) {
+            this.healthLevel = Math.min(10, healthLevel);
+        } else
+            this.healthLevel = Math.max(1, healthLevel);
+        if (hungerLevel > 10) {
+            this.hungerLevel = Math.min(10, hungerLevel);
+        } else
+            this.hungerLevel = Math.max(1, hungerLevel);
+        if (moodLevel > 10) {
+            this.moodLevel = Math.min(10, moodLevel);
+        } else
+            this.moodLevel = Math.max(1, moodLevel);
 
     }
-    public void showAnimalMoodStatus(){
+
+    public void showAnimalMoodStatus() {
         int moodLevel = 0;
-        moodLevel=getMoodLevel();
-        if (moodLevel>5) {
-            System.out.println(getName()+" the "+getSpecie()+" is shaking the tale" );
-        }
-            else
-            System.out.println(getName()+" the "+getSpecie()+" is moaning");
-        System.out.println("Mood level is: "+ moodLevel);
-       // return moodLevel;
+        moodLevel = getMoodLevel();
+        if (moodLevel > 5) {
+            System.out.println(getName() + " the " + getSpecie() + " is shaking the tale");
+        } else
+            System.out.println(getName() + " the " + getSpecie() + " is moaning");
+        System.out.println("Mood level is: " + moodLevel);
+        // return moodLevel;
     }
 }
 

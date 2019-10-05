@@ -46,7 +46,7 @@ public class App {
         // dogOwner.incomePerAnum=5000;
         System.out.println("Adopter's name is " + dogOwner.getName()/*name*/);
 
-        Foodforanimals animalFood = new Foodforanimals(127, 14, 230);
+        Foodforanimals animalFood = new Foodforanimals("Carne", 14, 230,34);
         animalFood.setQuantity();
         animalFood.setPricePerKg();
         animalFood.setCaloriesPerKg();
@@ -78,7 +78,7 @@ public class App {
       /* if (animalFood.currentDateTime.compareTo(animalFood.getExpirationDate())>0){
            System.out.println(animalFood.getName()+ " este expirata");
        }*/
-        LeisureActivities theHappyTime = new LeisureActivities(45, 3, 300, 3);
+        LeisureActivities theHappyTime = new LeisureActivities("Jumping", 3, 4, 320,23);
         theHappyTime.setDurationMinutes();
         theHappyTime.setNumberActivitiesPerDay();
         theHappyTime.setCaloriesBurnt();
@@ -128,7 +128,7 @@ public class App {
         // tempShelter.sizeSm = 10000;
         System.out.println(dog.getName()/*name*/ + " was adoptet from animal shelter " + tempShelter.getName()/*name*/ + " located in " + tempShelter.getAddress()/*address*/);
 
-        Drugs animalDrugs = new Drugs(2020, 132, 7, "Grave");
+        Drugs animalDrugs = new Drugs("Calmante", 132, 7, 34,"Grave");
         animalDrugs.setQuantity();
         animalDrugs.setPricePerKg();
         animalDrugs.setCaloriesPerKg();
@@ -202,6 +202,8 @@ public class App {
          */
         LogicalOp logicalOp = new LogicalOp();
         //logicalOp.asterix(7);
+        Game gameOne=new Game("Game one");
+        gameOne.start();
     }
 
 }
