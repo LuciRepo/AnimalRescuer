@@ -118,6 +118,19 @@ public class Animal {
             this.moodLevel = Math.max(1, moodLevel);
 
     }
+    public Animal (String name, int age, int healthLevel, int hungerLevel, int moodLevel, String foodPreference, String recreationPreference,String specie, String race,double weight, String colour){
+        this.name=name;
+        this.age=age;
+        this.healthLevel=healthLevel;
+        this.hungerLevel=hungerLevel;
+        this.moodLevel=moodLevel;
+        this.foodPreference=foodPreference;
+        this.recreationPreference=recreationPreference;
+        this.specie=specie;
+        this.race=race;
+        this.weight=weight;
+        this.colour=colour;
+    }
 
     public void showAnimalMoodStatus() {
         int moodLevel = 0;

@@ -27,7 +27,9 @@ public class Bird extends Animal {
     public Bird(int healthLevel, int hungerLevel, int moodLevel, int maxFlightAltitude) {
         super(healthLevel, hungerLevel, moodLevel);
         this.maxFlightAltitude = maxFlightAltitude;
-
-
+    }
+    public Bird( String name, int age, int healthLevel, int hungerLevel, int moodLevel, String foodPreference, String recreationPreference,String specie, String race,double weight, String colour, int maxFlightAltitude){
+        super(name, age, healthLevel, hungerLevel, moodLevel, foodPreference, recreationPreference, specie, race, weight, colour);
+        this.maxFlightAltitude=maxFlightAltitude;
     }
 }

@@ -16,6 +16,10 @@ public class Insect extends Bird {
         super(healthLevel, hungerLevel, moodLevel, maxFlightAltitude);
         this.poisonous = poisonous;
     }
+    public Insect(String name, int age, int healthLevel, int hungerLevel, int moodLevel, String foodPreference, String recreationPreference,String specie, String race,double weight, String colour,int maxFlightAltitude, Boolean poisonous){
+        super(name,age,healthLevel,hungerLevel,moodLevel,foodPreference,recreationPreference,specie,race,weight,colour,maxFlightAltitude);
+        this.poisonous=poisonous;
+    }
 
     @Override
     public void showAnimalMoodStatus() {

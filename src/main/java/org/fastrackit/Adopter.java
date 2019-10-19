@@ -68,6 +68,10 @@ public class Adopter {
         this.incomePerAnum = incomePerAnum;
     }
 
+    public Adopter(String name) {
+
+    }
+
     public Adopter(String name, String occupation, double incomePerAnum) {
         this.name = name;
         this.occupation = occupation;

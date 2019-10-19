@@ -47,6 +47,7 @@ public class App {
         System.out.println("Adopter's name is " + dogOwner.getName()/*name*/);
 
         Foodforanimals animalFood = new Foodforanimals("Carne", 14, 230,34);
+
         animalFood.setQuantity();
         animalFood.setPricePerKg();
         animalFood.setCaloriesPerKg();
@@ -203,7 +204,8 @@ public class App {
         LogicalOp logicalOp = new LogicalOp();
         //logicalOp.asterix(7);
         Game gameOne=new Game("Game one");
-        gameOne.start();
+      //  gameOne.start();
+        gameOne.newStart();
     }
 
 }
