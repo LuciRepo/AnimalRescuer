@@ -76,6 +76,6 @@ public class LeisureActivities {
         } else {
             moodLevel++;
         }
-        System.out.println(adopterName + " is having fun with " + animalName + " for " + this.durationMinutes + " minutes of " + this.name + " and the mood level is " + moodLevel);
+        //System.out.println(adopterName + " is having fun with " + animalName + " for " + this.durationMinutes + " minutes of " + this.name + " and the mood level is " + moodLevel);
     }
 }

@@ -14,7 +14,7 @@ public class LogicalOp {
         //countOdd1To100();
         //sumTo100(99);
         // averageTo100(29);
-        asterix(7);
+        //asterix(7);
     }
 
     /*public void count100(int numberGot) {
@@ -111,13 +111,13 @@ public class LogicalOp {
         }
     }*/
 
-    public void asterix(int number) {
+  /*  public void asterix(int number) {
         for (int i = 1; i <= 7; i++) {
             for (int j = i; j < 7; j++) {
                 System.out.print("*");
             }
             System.out.println("*");
         }
-    }
+    }*/
 }
 

@@ -16,7 +16,7 @@ public class Store extends Shelter {
     public Store(String name, String address, int sizeSm, String manager) {
         super(name, address, sizeSm);
         if (sizeSm > 1000) {
-            System.out.println("This is such a big store");
+           // System.out.println("This is such a big store");
         }
         this.manager = manager;
     }

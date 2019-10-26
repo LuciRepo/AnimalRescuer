@@ -26,9 +26,9 @@ public class App {
         dog.setRace("Bulldog");
         //dog.colour = "Grey-brownish";
         dog.setColour("Grey");
-        dog.showAnimalMoodStatus();
+      //  dog.animalMoodStatus();
 
-        System.out.println("Dog health level is " + dog.getHealthLevel()/*healthLevel*/ + ", hunger level is " + dog.getHungerLevel()/*hungerLevel*/ + ", mood level is " + dog.getMoodLevel()/*moodLevel*/);
+        //System.out.println("Dog health level is " + dog.getHealthLevel()/*healthLevel*/ + ", hunger level is " + dog.getHungerLevel()/*hungerLevel*/ + ", mood level is " + dog.getMoodLevel()/*moodLevel*/);
         Adopter dogOwner = new Adopter("Toby", "Soft Dev", 230);
         dogOwner.setName();
         dogOwner.setOccupation();
@@ -44,7 +44,7 @@ public class App {
         //dogOwner.address = "Downtown Oradeaville";
         dogOwner.setAddress("Nearby Oradeaville");
         // dogOwner.incomePerAnum=5000;
-        System.out.println("Adopter's name is " + dogOwner.getName()/*name*/);
+       // System.out.println("Adopter's name is " + dogOwner.getName()/*name*/);
 
         Foodforanimals animalFood = new Foodforanimals("Carne", 14, 230,34);
 
@@ -70,9 +70,9 @@ public class App {
         // animalFood.contentSweetPerKg = 20;
         animalFood.setContentSweetPerKg(15.8);
         //animalFood.caloriesPerKg=500;
-        System.out.println("Expiration date is " + animalFood.getExpirationDate()/*expirationDate*/);
-        System.out.println("Manufacturing date is " + animalFood.getManufacturingDate()/*manufacturingDate*/);
-        System.out.println("Data de azi este: " + animalFood.currentDateTime);
+        //System.out.println("Expiration date is " + animalFood.getExpirationDate()/*expirationDate*/);
+      //  System.out.println("Manufacturing date is " + animalFood.getManufacturingDate()/*manufacturingDate*/);
+       // System.out.println("Data de azi este: " + animalFood.currentDateTime);
        /* if(animalFood.currentDateTime.isAfter(animalFood.getExpirationDate()){
             System.out.println(animalFood.getName()+ " este expirata");
         }*/
@@ -92,7 +92,7 @@ public class App {
         theHappyTime.setPlace("Track racing");
         //theHappyTime.caloriesBurnt = 59.5;
         //theHappyTime.satisfactionLeisure = 2;
-        System.out.println("Today " + dog.getName()/*name*/ + " burnt " + theHappyTime.getCaloriesBurnt()/*caloriesBurnt*/ + " calories");
+       // System.out.println("Today " + dog.getName()/*name*/ + " burnt " + theHappyTime.getCaloriesBurnt()/*caloriesBurnt*/ + " calories");
 
         Vet theVet = new Vet("Velvet", "Domestic animals", 8000, 14);
         //theVet.name = "Veta";
@@ -110,15 +110,15 @@ public class App {
         theVet.setAddress("City nearby");
         // theVet.incomePerAnum = 8000;
         //theVet.setIncomePerAnum(8890);
-        System.out.println("Vet's name is " + theVet.getName()/*name*/);
+        //System.out.println("Vet's name is " + theVet.getName()/*name*/);
 
         Game animalFun = new Game();
         animalFun.adopter = "I am going to buy 2 kg of " + dog.getFoodPreference()/*foodPreference*/ + " for " + dog.getName()/*name*/;
         animalFun.dog = dog.getName()/*name*/ + " has been " + dog.getRecreationPreference()/*recreationPreference*/ + " for " + theHappyTime.getDurationMinutes()/*durationMinutes*/ + " minutes now";
         animalFun.vet = theVet.getName()/*name*/ + " visits " + dog.getName()/*name*/ + " for monthly consultation";
-        System.out.println(animalFun.adopter);
-        System.out.println(animalFun.dog);
-        System.out.println(animalFun.vet);
+      //  System.out.println(animalFun.adopter);
+      //  System.out.println(animalFun.dog);
+       // System.out.println(animalFun.vet);
 
         Shelter tempShelter = new Shelter("Old dog town", "Oradeaville Nufarul", 1900);
         tempShelter.setName();
@@ -127,7 +127,7 @@ public class App {
         //tempShelter.name = "Grivei";
         // tempShelter.address = "Oradeaville outskirts";
         // tempShelter.sizeSm = 10000;
-        System.out.println(dog.getName()/*name*/ + " was adoptet from animal shelter " + tempShelter.getName()/*name*/ + " located in " + tempShelter.getAddress()/*address*/);
+       // System.out.println(dog.getName()/*name*/ + " was adoptet from animal shelter " + tempShelter.getName()/*name*/ + " located in " + tempShelter.getAddress()/*address*/);
 
         Drugs animalDrugs = new Drugs("Calmante", 132, 7, 34,"Grave");
         animalDrugs.setQuantity();
@@ -140,7 +140,7 @@ public class App {
         animalDrugs.setBrand("Vita bella");
         //animalDrugs.pricePerDose = 20;
         animalDrugs.setPricePerDose(34.6);
-        System.out.println(dogOwner.getName()/*name*/ + " buys " + animalDrugs.getBrand()/*brand*/ + " for " + dog.getName()/*name*/);
+       // System.out.println(dogOwner.getName()/*name*/ + " buys " + animalDrugs.getBrand()/*brand*/ + " for " + dog.getName()/*name*/);
 
         Store animalStore = new Store("Pet Store", "Oradeaville south part", 1100, "Peter");
         animalStore.setName();
@@ -150,7 +150,7 @@ public class App {
         //animalStore.name = "Pet Store";
         //animalStore.adress = " Oradeaville south part";
         //animalStore.manager = "Peter";
-        System.out.println(animalDrugs.getBrand()/*brand*/ + " costs " + animalDrugs.getPricePerDose()/*pricePerDose*/ + " $ at " + animalStore.getManager()/*manager*/ + "'s " + animalStore.getName()/*name*/);
+       // System.out.println(animalDrugs.getBrand()/*brand*/ + " costs " + animalDrugs.getPricePerDose()/*pricePerDose*/ + " $ at " + animalStore.getManager()/*manager*/ + "'s " + animalStore.getName()/*name*/);
 
         Transport animalTransport;
         animalTransport = new Transport("Taxi2", 1.6);
@@ -162,7 +162,7 @@ public class App {
         //animalTransport.speedKmPerHour = 45.5;
         animalTransport.setSpeedKmPerHour(34.5);
         //animalTransport.pricePerKm = 1.2;
-        System.out.println(theVet.getName()/*name*/ + " uses " + animalTransport.getName()/*name*/ + " to visit " + dog.getName()/*name*/);
+        //System.out.println(theVet.getName()/*name*/ + " uses " + animalTransport.getName()/*name*/ + " to visit " + dog.getName()/*name*/);
         dogOwner.feedAnimal("Chaika", "Meat", 5, 6);
         theHappyTime.playTimeAnimal("Toby", "Spyke", 6, "Chasing cats");
 
@@ -173,7 +173,7 @@ public class App {
         bird.setRecreationPreference("singing");
         bird.setSpecie("Parrot");
         bird.setColour("redish");
-        bird.showAnimalMoodStatus();
+      //  bird.animalMoodStatus();
 
         /*
         dog.setName("Tweety");
@@ -191,7 +191,7 @@ public class App {
         butterfly.setSpecie("Blue butterfly");
         butterfly.setColour("blueish");
         butterfly.setRecreationPreference("Flying in circles");
-        butterfly.showAnimalMoodStatus();
+        //butterfly.showAnimalMoodStatus();
 
         /*
         dog.setName("Floppy");

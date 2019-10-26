@@ -21,15 +21,15 @@ public class Insect extends Bird {
         this.poisonous=poisonous;
     }
 
-    @Override
-    public void showAnimalMoodStatus() {
+   /* @Override
+    public void animalMoodStatus() {
         //super.showAnimalMoodStatus();
         int moodLevel = 0;
         moodLevel = getMoodLevel();
         if (moodLevel > 5) {
-            System.out.println(getName() + " the " + getSpecie() + " is happily " + getRecreationPreference());
-        } else
-            System.out.println(getName() + " the " + getSpecie() + " is flying down with the wind");
-        System.out.println("Mood level is: " + moodLevel);
-    }
+           // System.out.println(getName() + " the " + getSpecie() + " is happily " + getRecreationPreference());
+        } else{}
+           // System.out.println(getName() + " the " + getSpecie() + " is flying down with the wind");
+       // System.out.println("Mood level is: " + moodLevel);
+    }*/
 }

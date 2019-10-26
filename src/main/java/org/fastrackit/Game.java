@@ -9,8 +9,11 @@ public class Game {
     public String adopter;
     public String dog;
     public String vet;
+    private int moodLevel = 1;
     public int numberOfFoods;
     public int numberOfActivities = 4;
+    Animal bird;
+    Animal insect;
 
     private ArrayList<Foodforanimals> avalilableFood = new ArrayList<Foodforanimals>(numberOfFoods);
     private LeisureActivities[] availableActivities = new LeisureActivities[numberOfActivities];
@@ -91,13 +94,18 @@ public class Game {
         String animalAles = in.nextLine();
         if ((animalAles.equalsIgnoreCase("Bird"))) {
             Animal bird = new Bird("Birdy", 2, 8, 4, 3, "Seeds", "Singing", "Parrot", "Imperial", 10, "Yellow", 100);
-
+          //  bird.animalMoodStatus(bird.getMoodLevel());
+          //  this.moodLevel = bird.getMoodLevel();
         } else {
             if (animalAles.equalsIgnoreCase("Insect")) {
                 Animal insect = new Insect("Butter", 1, 3, 4, 5, "dust", "flying", "Butterfly", "common", 0.2, "Blue", 10, Boolean.FALSE);
                 //   System.out.println("Ok");
+                //insect.animalMoodStatus(insect.getMoodLevel());
+               // this.moodLevel = insect.getMoodLevel();
+
             } else {
                 System.out.println("Puteti alege doar Bird sau Insect");
+                initAnimal();
             }
         }
     }
@@ -155,7 +163,7 @@ public class Game {
             System.out.println("SatisfactionLeisure");
             int satisfactionLeisure = in.nextInt();
             LeisureActivities activityOfChoice = new LeisureActivities(name, durationInMinutes, numberActivitiesPerDay, caloriesBurnt, satisfactionLeisure);
-           // System.out.println(activityOfChoice.getName());
+            // System.out.println(activityOfChoice.getName());
         }
     }
 
@@ -164,10 +172,23 @@ public class Game {
         initAdopter();
         initFood();
         initActivities();
-        requirefeeding();
-        requireActivity();
+        try {
+            do {
+
+                requirefeeding();
+                requireActivity();
+                moodLevel+=2;
+                if (moodLevel>=10){
+                    System.out.println("Congrats! You won!");
+                }
+            } while (moodLevel <= 10);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
     }
 }
+
 
 
 

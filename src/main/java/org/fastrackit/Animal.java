@@ -118,29 +118,30 @@ public class Animal {
             this.moodLevel = Math.max(1, moodLevel);
 
     }
-    public Animal (String name, int age, int healthLevel, int hungerLevel, int moodLevel, String foodPreference, String recreationPreference,String specie, String race,double weight, String colour){
-        this.name=name;
-        this.age=age;
-        this.healthLevel=healthLevel;
-        this.hungerLevel=hungerLevel;
-        this.moodLevel=moodLevel;
-        this.foodPreference=foodPreference;
-        this.recreationPreference=recreationPreference;
-        this.specie=specie;
-        this.race=race;
-        this.weight=weight;
-        this.colour=colour;
+
+    public Animal(String name, int age, int healthLevel, int hungerLevel, int moodLevel, String foodPreference, String recreationPreference, String specie, String race, double weight, String colour) {
+        this.name = name;
+        this.age = age;
+        this.healthLevel = healthLevel;
+        this.hungerLevel = hungerLevel;
+        this.moodLevel = moodLevel;
+        this.foodPreference = foodPreference;
+        this.recreationPreference = recreationPreference;
+        this.specie = specie;
+        this.race = race;
+        this.weight = weight;
+        this.colour = colour;
     }
 
-    public void showAnimalMoodStatus() {
-        int moodLevel = 0;
-        moodLevel = getMoodLevel();
-        if (moodLevel > 5) {
-            System.out.println(getName() + " the " + getSpecie() + " is shaking the tale");
-        } else
-            System.out.println(getName() + " the " + getSpecie() + " is moaning");
-        System.out.println("Mood level is: " + moodLevel);
+    public int animalMoodStatus(int mood) {
+        int moodLevel = mood;
+        //moodLevel = getMoodLevel();
+        mood+=2;
+
+        // System.out.println(getName() + " the " + getSpecie() + " is moaning");
+        //System.out.println("Mood level is: " + moodLevel);
         // return moodLevel;
+        return mood;
     }
 }
 

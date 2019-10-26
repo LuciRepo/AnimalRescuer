@@ -11,18 +11,18 @@ public class Bird extends Animal {
         this.maxFlightAltitude = maxFlightAltitude;
     }
 
-    @Override
-    public void showAnimalMoodStatus() {
-        //super.showAnimalMoodStatus();
+    /*@Override
+    public void animalMoodStatus() {
+        //super.animalMoodStatus();
         int moodLevel = 0;
         moodLevel=getMoodLevel();
         if (moodLevel>5) {
-           System.out.println(getName()+" the "+getSpecie() + " is happily "+ getRecreationPreference());
+          // System.out.println(getName()+" the "+getSpecie() + " is happily "+ getRecreationPreference());
         }
-        else
-           System.out.println(getName()+" the "+getSpecie() +" is sad and so quiet");
-        System.out.println("Mood level is: "+ moodLevel);
-    }
+        else{}
+         //  System.out.println(getName()+" the "+getSpecie() +" is sad and so quiet");
+        //System.out.println("Mood level is: "+ moodLevel);
+    }*/
 
     public Bird(int healthLevel, int hungerLevel, int moodLevel, int maxFlightAltitude) {
         super(healthLevel, hungerLevel, moodLevel);
